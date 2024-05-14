@@ -8,10 +8,10 @@
 
   <body>
     <h1 id="title">Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <h3 id="description">Thank you for taking the time to help us improve the platform</h3>
     <form id="survey-form">
 
-      <fieldset>
+      <fieldset id="bio">
         <label id="name-label" for="name">Name:</label>
         <input id="name" type="text" placeholder="Enter your name" required >
 
@@ -32,40 +32,59 @@
       </fieldset>
 
       <fieldset>
-        <p id="cap">Would you recommend freeCodeCamp to a friend?</p>
-        <input type="radio" value=1 name="recommend" id="definitely">
-        <label for="definitely">Definitely</label>
+        <p class="cap">Would you recommend freeCodeCamp to a friend?</p>
+        <div class="flex_align">
+          <div>
+            <input type="radio" value=1 name="recommend" id="definitely">
+            <label for="definitely" class="request">Definitely</label>
+          </div>
 
-        <input type="radio" value=2 name="recommend" id="maybe"> Maybe
-        <label for="maybe">Maybe</label>
+          <div>
+            <input type="radio" value=2 name="recommend" id="maybe">
+            <label for="maybe" class="request">Maybe</label>
+          </div>
 
-        <input type="radio" value=3 name="recommend" id="not_sure">
-        <label for="not_sure">Not sure</label>
+          <div>
+            <input type="radio" value=3 name="recommend" id="not_sure">
+            <label for="not_sure" class="request">Not sure</label>
+          </div>
+        </div>
       </fieldset>
 
       <fieldset>
-        <p id="cap">What would you like to see improved? </p>
-        <input type="checkbox" value="frontend" id="frontend">
-        <label for="frontend">Front-end Projects</label>
+        <p class="cap">What would you like to see improved? </p>
+        <div class="flex_align">
+          <div>
+            <input type="checkbox" value="frontend" id="frontend">
+            <label class="request" for="frontend">Front-end Projects</label>
+          </div>
+          <div>
+            <input type="checkbox" value="backend" id="backend">
+            <label class="request" for="backend">Back-end Projects</label>
+          </div>
+          <div>
+            <input type="checkbox" value="data-visual" id="visual">
+            <label class="request" for="visual">Data Visualization</label>
+          </div>
+          <div>
+            <input type="checkbox" value="challenges" id="challenges">
+            <label class="request" for="challenges">Challenges</label>
+          </div>
+          <div>
+            <input type="checkbox" value="open" id="open">
+            <label class="request" for="open">Open Source Community</label>
+          </div>
+          <div>
+            <input type="checkbox" value="gitter" id="gitter">
+            <label class="request" for="gitter">Gitter help rooms</label>
+          </div>
+        </div>
+      </fieldset>
 
-        <input type="checkbox" value="backend" id="backend">
-        <label for="backend">Back-end Projects</label>
-
-        <input type="checkbox" value="data-visual" id="visual">
-        <label for="visual">Data Visualization</label>
-
-        <input type="checkbox" value="challenges" id="challenges">
-        <label for="challenges">Challenges</label>
-
-        <input type="checkbox" value="open" id="open">
-        <label for="open">Open Source Community</label>
-
-        <input type="checkbox" value="gitter" id="gitter">
-        <label for="gitter">Gitter help rooms</label>
-
+      <div class="comment">
         <label for="textarea">Any comments or suggestions?</label>
         <textarea id="textarea" placeholder="Enter your comment here..." rows=4 cols=40></textarea>
-      </fieldset>
+      </div>
 
       <button type="submit" id="submit">Submit</button>
     </form>
