@@ -10,64 +10,63 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
+
       <fieldset>
-        <label id="name-label">
-          Name: <input id="name" type="text" placeholder="Enter your name" required >
-        </label>
-        <label id="email-label">
-          Email: <input id="email" type="email" placeholder="Enter your email" required >
-        </label>
-        <label id="number-label">
-          Age: <input id="number" type="number" min=13 max=120 placeholder="Age" required >
-        </label>
-        <label for="dropdown">
-          Which option best describes your current role?
-          <select id="dropdown">
-            <option>select cuurent role</option>
-            <option>Student</option>
-            <option>Full Time Job</option>
-            <option>Full Time Learner</option>
-            <option>other</option>
-          </select>
-        </label>
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required >
+
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" required >
+
+        <label id="number-label">Age:</label>
+        <input id="number" type="number" min=13 max=120 placeholder="Age" required >
+
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown">
+          <option>select cuurent role</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Full Time Learner</option>
+          <option>other</option>
+        </select>
       </fieldset>
+
       <fieldset>
         <p id="cap">Would you recommend freeCodeCamp to a friend?</p>
-        <label>
-          <input type="radio" value=1 name="recommend"> Definitely
-        </label>
-        <label>
-          <input type="radio" value=2 name="recommend"> Maybe
-        </label>
-        <label>
-          <input type="radio" value=3 name="recommend"> Not sure
-        </label>
+        <input type="radio" value=1 name="recommend" id="definitely">
+        <label for="definitely">Definitely</label>
+
+        <input type="radio" value=2 name="recommend" id="maybe"> Maybe
+        <label for="maybe">Maybe</label>
+
+        <input type="radio" value=3 name="recommend" id="not_sure">
+        <label for="not_sure">Not sure</label>
       </fieldset>
+
       <fieldset>
         <p id="cap">What would you like to see improved? </p>
-        <label>
-          <input type="checkbox" value="frontend"> Front-end Projects
-        </label>
-        <label>
-          <input type="checkbox" value="backend"> Back-end Projects
-        </label>
-        <label>
-          <input type="checkbox" value="data-visual"> Data Visualization
-        </label>
-        <label>
-          <input type="checkbox" value="challenges"> Challenges
-        </label>
-        <label>
-          <input type="checkbox" value="open"> Open Source Community
-        </label>
-        <label>
-          <input type="checkbox" value="gitter"> Gitter help rooms
-        </label>
-        <label>
-          Any comments or suggestions?
-          <textarea placeholder="Enter your comment here..." rows=4 cols=40></textarea>
-        </label>
+        <input type="checkbox" value="frontend" id="frontend">
+        <label for="frontend">Front-end Projects</label>
+
+        <input type="checkbox" value="backend" id="backend">
+        <label for="backend">Back-end Projects</label>
+
+        <input type="checkbox" value="data-visual" id="visual">
+        <label for="visual">Data Visualization</label>
+
+        <input type="checkbox" value="challenges" id="challenges">
+        <label for="challenges">Challenges</label>
+
+        <input type="checkbox" value="open" id="open">
+        <label for="open">Open Source Community</label>
+
+        <input type="checkbox" value="gitter" id="gitter">
+        <label for="gitter">Gitter help rooms</label>
+
+        <label for="textarea">Any comments or suggestions?</label>
+        <textarea id="textarea" placeholder="Enter your comment here..." rows=4 cols=40></textarea>
       </fieldset>
+
       <button type="submit" id="submit">Submit</button>
     </form>
   </body>
