@@ -41,7 +41,7 @@ form {
 fieldset {
   border: none;
   border-bottom: #fff solid 1px;
-  margin: 15px 30px 20px 10px;
+  margin: 0 30px 20px 10px;
 }
 
 .comment {
@@ -78,7 +78,8 @@ label:not(.request), .cap {
 }
 
 input[type="radio"], input[type="checkbox"] {
-  display: flex;
+  vertical-align: middle;
+  line-height: 1;
 }
 
 #submit {
@@ -97,4 +98,32 @@ input[type="radio"], input[type="checkbox"] {
 
 #submit:hover {
   background-color: #27ae60;
+}
+
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  /* Your styles for mobile devices */
+  label:not(.request), .cap {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #bio>input, select, textarea {
+    margin-bottom: 15px;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+/* Tablet devices (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Your styles for tablet devices */
+}
+
+/* Desktop devices (wider than 1024px) */
+@media only screen and (min-width: 1024px) {
+  /* Your styles for desktop devices */
 }
