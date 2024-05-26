@@ -1,19 +1,18 @@
-.container {
-	width: 100%;
-	max-width: 1000px;
-	margin: 30px auto;
-}
-
 .filters {
 	background-color: white;
 	height: 70px;
-	width: 100%;
+	max-width: 100%;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding-right: 30px;
+}
+
+.filters ul, .filters li {
+	padding: 5px 0;
+	padding-left: 8px;
 }
 
 .filter_content {
@@ -68,6 +67,8 @@
 
 .popover ul {
 	list-style-type: none;
+	padding: 0;
+	padding-left: 7px;
 }
 
 .popover h2 {
