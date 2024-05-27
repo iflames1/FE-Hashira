@@ -52,6 +52,7 @@ article li {
 
 article li:last-of-type {
 	border-bottom: none;
+	padding-bottom: 0;
 }
 
 article h3 {
@@ -64,7 +65,7 @@ footer {
 
 footer .summary {
 	text-align: center;
-	width: 500px;
+	width: 90%;
 	margin: auto;
 	font-style: oblique;
 }
