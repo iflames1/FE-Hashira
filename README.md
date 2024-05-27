@@ -1,4 +1,3 @@
-[Profile Picture](/tribute_page/dp.jpg)
 # FE Hashira
 ## [Surver Form](/survey_form/)
 * ### [Survey Form web Preview](https://flames-survey-form.vercel.app/)
